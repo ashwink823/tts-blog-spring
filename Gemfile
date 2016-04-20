@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+gem 'devise'
+
 gem 'materialize-sass'
 
 gem 'httparty'

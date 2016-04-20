@@ -13,19 +13,15 @@
 
   <%= f.hidden_field :blog_post_id, value: @blog_post.id %>
 
-  <div class="field">
-    <%= f.label :author %><br>
-    <%= f.text_field :author %>
-  </div>
 
   <div class="field">
     <%= f.label :comment_entry %><br>
     <%= f.text_area :comment_entry %>
   </div>
 
-
-
   <div class="actions">
     <%= f.submit %>
   </div>
+
+  <%= f.hidden_field :user_id, value: current_user.id %>
 <% end %>
