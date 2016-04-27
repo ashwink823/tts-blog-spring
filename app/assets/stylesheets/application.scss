@@ -15,9 +15,13 @@
  */
 
 @import "materialize/components/color";
-$primary-color: color("blue", "lighten-2") !default;
+$primary-color: color("indigo", "darken-4") !default;
 @import "materialize";
+
+
 
 body {
 	padding: 0 20px;
+    background-image: url("http://assets.nydailynews.com/polopoly_fs/1.1542852.1386652602!/img/httpImage/image.jpg_gen/derivatives/article_970/178891861.jpg");
+    
 }

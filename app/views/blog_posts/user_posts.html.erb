@@ -1,0 +1,22 @@
+<h2><%= @user.name %>'s Profile</h2>
+<p>
+  Birthday: <%= @user.birthday.strftime('%m/%d/%Y') %>
+</p>
+
+<% @user.blog_posts.each do |blog_post| %>
+  <div>
+    <div>
+      <div class="heading">
+        <%= link_to blog_post.title, blog_post %>
+      </div>
+      <div class="body">
+        <p>
+          <span class="posted-at"><%= blog_post.created_at.strftime('%m/%d/%Y at %l:%M:%p') %></span>
+        </p>
+        <p>
+          <%= blog_post.blog_entry[0..150] %>...[<%= link_to "READ MORE", blog_post %>]
+        </p>
+      </div>
+    </div>
+  </div>
+<% end %>

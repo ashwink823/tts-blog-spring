@@ -1,3 +1,22 @@
 // Place all the styles related to the Welcome controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+body {
+    background-image: url("http://assets.nydailynews.com/polopoly_fs/1.1542852.1386652602!/img/httpImage/image.jpg_gen/derivatives/article_970/178891861.jpg")
+}
+
+h1 {
+    color: silver;
+    font-family: "arial-black";
+}
+
+p {
+    color: silver;
+    font-family:"arial";
+    font-size: 100 px;
+}
+
+.main-pic {
+    text-align: center;
+}
